@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    background-color: #A3BAC3;
+  }
+
+.menuLateral{
+    width: 200px;
+    background-color: #4D7C8A;
+    padding: 20px;
+    color: #ff0000;
+}
+
+.menuLateral a:link, .menuLateral a:visited {
+    display: block;
+    width: 100%;
+    background-color: #7F9C96;
+    border-radius: 10px;
+    color: #CBDF90;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .menuLateral a:hover, .menuLateral a:active {
+    background-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  .linkSelected {
+    font-weight: bold;
+    font-size: large;
+}
+
+.router-content {
+    position: relative;
+  }
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

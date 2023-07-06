@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(39, 153, 77), rgb(7, 54, 34));
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    border-radius: 10px;
+}
+
+.box {
+    background-color: rgba(0, 34, 8, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.inputTxt{
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+button:not(:disabled):hover{
+    cursor: pointer;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
