@@ -4,13 +4,11 @@
             <div class="inputTxt">
                 <div>
                     <label for="peso">Peso:</label>
-                    <input type="number" id="peso" [(ngModel)]="pesoDigitado" placeholder="Digite seu peso">
-                    <h3>{{pesoDigitado}}</h3>
+                    <input type="number" id="peso" [(ngModel)]="pesoDigitado">
+                    <h3>{{pesoDigitado}} kg</h3>
                     <label for="altura">Altura:</label>
-                    <input type="number" id="altura" [(ngModel)]="alturaDigitada" placeholder="Digite sua altura">
-                    <h3>{{alturaDigitada}}</h3>
-                    <label for="idade">Idade</label>
-                    <input type="number" id="idade" [(ngModel)]="idadeDigitada" placeholder="Digite sua idade">
+                    <input type="number" id="altura" [(ngModel)]="alturaDigitada">
+                    <h3>{{alturaDigitada}} m</h3>
                 </div>
                 <br>
                 <div>
@@ -19,6 +17,10 @@
                     <label for="sexMasc">Masculino</label>
                     <input type="radio" id="sexFem" name="inputSex" value="Feminino" [(ngModel)]="sexoEscolhido">
                     <label for="sexFem">Feminino</label>
+                </div>
+                <br>
+                <div>
+                    <img [src]="alteraImg()" width="100px">
                 </div>
                 <br>
                 <div>

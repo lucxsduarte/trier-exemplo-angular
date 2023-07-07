@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculo-imc.component.scss']
 })
 export class CalculoImcComponent {
-  public idadeDigitada: string = "";
   public sexoEscolhido: string = "";
   public pesoDigitado: number = 0;
   public alturaDigitada: number = 0;
@@ -15,7 +14,8 @@ export class CalculoImcComponent {
 
   public enviaFormulario(){
     const imc = this.pesoDigitado / (this.alturaDigitada * this.alturaDigitada);
-    
+    const imcFormatado = Math.round(imc * 100) / 100;
+
     if (this.sexoEscolhido == "Feminino") {
       if (imc < 19.1 ) {
           this.status = "status: MAGREZA";
@@ -28,7 +28,7 @@ export class CalculoImcComponent {
         } else if (imc > 32.3){
           this.status = "status: OBESIDADE";
         } 
-      this.resultado = `Seu imc é ${imc} e seu ${this.status}`;
+      this.resultado = `Seu imc é ${imcFormatado} e seu ${this.status}`;
 
     } else if (this.sexoEscolhido == "Masculino") {
       if (imc < 20.7 ) {
@@ -42,7 +42,7 @@ export class CalculoImcComponent {
         } else if (imc > 31.2){
           this.status = "status: OBESIDADE";
         }
-        this.resultado = `Seu imc é ${imc} e seu ${this.status}`;
+        this.resultado = `Seu imc é ${imcFormatado} e seu ${this.status}`;
     }
   }
 
@@ -52,5 +52,12 @@ export class CalculoImcComponent {
     } else {
       return true;
     }
+  }
+
+  public alteraImg():string {
+    if (this.status != "") {
+      return "";
+    }
+    return "https://cdn1.iconfinder.com/data/icons/ui-set-6/100/Question_Mark-256.png";
   }
 }
