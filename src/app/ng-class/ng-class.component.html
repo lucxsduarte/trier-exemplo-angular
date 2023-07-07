@@ -1,1 +1,23 @@
-<p>ng-class works!</p>
+<div class="box" [ngClass]="{'boxVerde': somaMaiorQue50(), 'boxVermelha': !somaMaiorQue50()}">
+    <fieldset>
+        <legend>Jogo da Soma</legend>
+        <div>
+            <p>Digite dois números que a <br> soma  deles seja maior que 50
+            </p>
+            <div>
+                <label for="numeroUm">Número 1:</label>
+                <br>
+                <input type="number" id="numeroUm" [(ngModel)]="numeroUm">
+                <br><br>
+                <label for="numeroDois">Número 2:</label>
+                <br>
+                <input type="number" id="numeroDois" [(ngModel)]="numeroDois">
+                <br><br>
+                <label for="resultado">Resultado:</label>
+                <br>
+                <input type="number" id="resultado" [(ngModel)]="resultadoSoma">
+            </div>
+            <br>
+        </div>
+    </fieldset>
+</div>

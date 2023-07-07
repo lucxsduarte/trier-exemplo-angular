@@ -2,10 +2,11 @@
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E0EEC6;
+    height: 100vh;
   }
 
 .menuLateral{
-    width: 200px;
+    width: 150px;
     background-color: #243E36;
     padding: 20px;
 }
@@ -13,7 +14,6 @@
 .menuLateral a:link, .menuLateral a:visited {
     display: block;
     width: 100%;
-    background-color: #adb995ce;
     border-radius: 10px;
     color: #CBDF90;
     padding: 5px;

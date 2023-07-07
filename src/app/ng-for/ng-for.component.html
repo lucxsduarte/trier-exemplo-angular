@@ -1,1 +1,28 @@
-<p>ng-for works!</p>
+<h1>Exemplo ngFor</h1>
+
+<div class="box">
+  <fieldset>
+    <legend>For</legend>
+    <table border="1" cellSpacing="0">
+      <tr class="centraliza">
+        <td><b>Fruta</b></td>
+        <td><b>Quantidade</b></td>
+      </tr>
+      <tr *ngFor="let fruta of frutas" (click)="clickFruta(fruta)">
+        <td>{{fruta.nome}}</td>
+        <td class="centraliza">{{fruta.quantidade}}</td>
+      </tr>
+    </table>
+    <hr/>
+    <button (click)="comerMaca()">Comer Maçã</button>
+    <button (click)="comerBanana()">Comer Banana</button>
+    <button (click)="comerLaranja()">Comer Laranja</button>
+    <button (click)="comerUva()">Comer Uva</button>
+    
+    <br>
+    <div *ngIf="nomeSelecionado != ''">
+      <h2>Fruta: {{nomeSelecionado}}</h2>
+      <h2>Quantidade: {{quantidadeSelecionada}}</h2>
+    </div>
+  </fieldset>
+</div>

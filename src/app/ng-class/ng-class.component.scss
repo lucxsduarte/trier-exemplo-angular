@@ -1,0 +1,30 @@
+.boxVerde {
+    background-color: rgba(0, 34, 8, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.boxVermelha {
+    background-color: rgba(95, 9, 9, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+fieldset {
+    text-align: center;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

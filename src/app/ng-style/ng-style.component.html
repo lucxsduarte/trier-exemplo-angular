@@ -1,1 +1,9 @@
-<p>ng-style works!</p>
+<div class="box">
+    <fieldset>
+        <legend>Transforme em Circulo</legend>
+        <div [ngStyle]="{'width.px': raioAtual*2, 'height.px': raioAtual*2, 'border-radius.px': raioAtual, 'background-color': '#fff'}">
+        </div>
+        <br>
+        <button (click)="aumentaRaio()">Aumentar Raio</button>
+    </fieldset>
+</div>

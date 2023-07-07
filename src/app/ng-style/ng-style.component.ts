@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NgStyleComponent {
 
+  public raioInicial: number = 100;
+  public raioAtual: number = this.raioInicial;
+
+  aumentaRaio():void {
+    this.raioAtual += 20;
+    if (this.raioAtual > 180) {
+      this.raioAtual = 100;
+    }
+
+  }
 }

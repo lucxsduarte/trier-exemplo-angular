@@ -1,1 +1,21 @@
-<p>ng-if works!</p>
+<div class="box">
+    <fieldset>
+        <legend>Avalie!</legend>
+        <div>
+            <div class="container">
+                <div *ngIf="nota1" class="divNota1">Nota 1!</div>
+                <div *ngIf="nota2" class="divNota2">Nota 2!</div>
+                <div *ngIf="nota3" class="divNota3">Nota 3!</div>
+            </div>
+            <br><br>
+            <div>
+                <div>
+                    <button (click)="clickNota1()" >1</button>
+                    <button (click)="clickNota2()">2</button>
+                    <button (click)="clickNota3()">3</button>
+                </div>
+            </div>
+        </div>
+        
+    </fieldset>
+</div>
