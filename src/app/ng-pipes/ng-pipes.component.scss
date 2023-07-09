@@ -1,0 +1,27 @@
+.destaque {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    border-radius: 10px;
+}
+
+.box {
+    background-color: rgba(0, 34, 8, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;
+    margin-top: 50%;
+}

@@ -19,6 +19,8 @@ import { MicroondasComponent } from './microondas/microondas.component';
 import { PaiFilhoComponent } from './pai-filho/pai-filho.component';
 import { FilhoPaiComponent } from './filho-pai/filho-pai.component';
 import { ServicesComponent } from './services/services.component';
+import { InvertePipe } from './inverte.pipe';
+import { SqrtPipe } from './sqrt.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ServicesComponent } from './services/services.component';
     MicroondasComponent,
     PaiFilhoComponent,
     FilhoPaiComponent,
-    ServicesComponent
+    ServicesComponent,
+    InvertePipe,
+    SqrtPipe
   ],
   imports: [
     BrowserModule,

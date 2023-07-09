@@ -1,0 +1,39 @@
+.box {
+    background-color: rgba(0, 34, 8, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 400px;
+    color: #fff;
+}
+
+legend {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    border-radius: 10px;
+}
+
+.centraliza {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(94, 94, 94, 0.733);
+    color: #E0EEC6;
+    height: 50px;
+    font-size: large;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

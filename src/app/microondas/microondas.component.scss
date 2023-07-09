@@ -3,10 +3,6 @@ body {
     background-image: linear-gradient(to right, rgb(39, 153, 77), rgb(7, 54, 34));
 }
 
-.teclado {
-    width: 100%;
-}
-
 button {
     border-radius: 10px;
     background-color: rgb(225, 241, 180);
@@ -31,4 +27,18 @@ input {
     font-size: large;
     color: rgb(225, 241, 180);
 }
+
+.botaoMetade {
+    width: 50%;
+}
+
+.visor {
+    width: 100%;
+    height: 80px;
+    font-family: "LCD", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    border: none;
+}
+
 

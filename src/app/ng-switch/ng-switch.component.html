@@ -1,21 +1,68 @@
-<h1>Exemplo ngSwitch</h1>
-
-<input type="number"[(ngModel)]="valor">
-<div [ngSwitch]="valor">
-  <p *ngSwitchCase="1"> Domingo</p>
-  <p *ngSwitchCase="2"> Segunda feira</p>
-  <p *ngSwitchCase="3"> Terça feira</p>
-  <p *ngSwitchCase="4"> Quarta feira</p>
-  <p *ngSwitchCase="5"> Quinta feira</p>
-  <p *ngSwitchCase="6"> Sexta feira</p>
-  <p *ngSwitchCase="7"> Sábado</p>
-  <div *ngSwitchCase="8">
-    <p><b>SUL</b></p>
-    <ul>
-      <li>SANTA CATARINA</li>
-      <li>PARANÁ</li>
-      <li>RIO GRANDE DO SUL</li>
-    </ul>
-  </div>
-  <p *ngSwitchDefault> Não representa um dia de semana</p>
+<div class="box">
+  <fieldset>
+    <legend>Escolha uma região</legend>
+    <div>
+      <p>1 - NORTE</p>
+      <p>2 - NORDESTE</p>
+      <P>3 - CENTRO-OESTE</P>
+      <p>4 - SUDESTE</p>
+      <p>5 - SUL</p>
+    </div>
+    <input type="number"[(ngModel)]="valor">
+    <div [ngSwitch]="valor" class="centraliza">
+      <div *ngSwitchCase="1">
+        <p><b>NORTE</b></p>
+        <ul>
+          <li>Acre</li>
+          <li>Amapá</li>
+          <li>Amazonas</li>
+          <li>Pará</li>
+          <li>Rondônio</li>
+          <li>Roraima</li>
+          <li>Tocantins</li>
+        </ul>
+      </div>
+      <div *ngSwitchCase="2">
+        <p><b>NORDESTE</b></p>
+        <ul>
+          <li>Alagoas</li>
+          <li>Bahia</li>
+          <li>Ceará</li>
+          <li>Maranhão</li>
+          <li>Paraíba</li>
+          <li>Pernambuco</li>
+          <li>Piauí</li>
+          <li>Rio Grande do Norte</li>
+          <li>Sergipe</li>
+        </ul>
+      </div>
+      <div *ngSwitchCase="3">
+        <p><b>CENTRO-OESTE</b></p>
+        <ul>
+          <li>Goiás</li>
+          <li>Mato Grosso</li>
+          <li>Mato Grosso do Sul</li>
+        </ul>
+      </div>
+      <div *ngSwitchCase="4">
+        <p><b>SUDESTE</b></p>
+        <ul>
+          <li>Espirito Santo</li>
+          <li>Minas Gerais</li>
+          <li>Rio de Janeiro</li>
+          <li>São Paulo</li>
+        </ul>
+      </div>
+      <div *ngSwitchCase="5">
+        <p><b>SUL</b></p>
+        <ul>
+          <li>SANTA CATARINA</li>
+          <li>PARANÁ</li>
+          <li>RIO GRANDE DO SUL</li>
+        </ul>
+      </div>
+      <p *ngSwitchDefault> Não representa nenhuma região</p>
+    </div>
+  </fieldset>
 </div>
+

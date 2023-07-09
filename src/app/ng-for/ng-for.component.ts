@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-for.component.scss']
 })
 export class NgForComponent {
-  contador : number = 4;
   nomeSelecionado: string = "";
   quantidadeSelecionada: number = 0;
 
