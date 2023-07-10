@@ -1,31 +1,31 @@
 <div class="box">
     <fieldset>
         <div>
-            <input class="visor" type="text">
+            <input class="visor" type="text" [(ngModel)]="totalVisor">
         </div>
         <br>
         <div>
             <div>
-                <button class="botaoMetade">+1min</button>
-                <button class="botaoMetade">+30seg</button>
+                <button class="botaoMetade" (click)="acrescentarTempo(60)">+1min</button>
+                <button class="botaoMetade" (click)="acrescentarTempo(30)">+30seg</button>
             </div>
             <br>
             <div class="">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+                <button (click)="adicionaTempo(1)">1</button>
+                <button (click)="adicionaTempo(2)">2</button>
+                <button (click)="adicionaTempo(3)">3</button>
                 <br>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <button (click)="adicionaTempo(4)">4</button>
+                <button (click)="adicionaTempo(5)">5</button>
+                <button (click)="adicionaTempo(6)">6</button>
                 <br>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                <button (click)="adicionaTempo(7)">7</button>
+                <button (click)="adicionaTempo(8)">8</button>
+                <button (click)="adicionaTempo(9)">9</button>
                 <br>
-                <button>Cancelar</button>
-                <button>0</button>
-                <button>Ligar</button>
+                <button (click)="paraContador()">Cancelar</button>
+                <button (click)="adicionaTempo(0)">0</button>
+                <button (click)="iniciaContador()" [disabled]="contadorAtivo" >Ligar</button>
             </div>
         </div>
     </fieldset>
