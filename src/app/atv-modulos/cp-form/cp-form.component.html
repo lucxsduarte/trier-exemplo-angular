@@ -1,0 +1,19 @@
+<div>
+    <div>
+        <fieldset>
+            <legend>Cadastre o medicamento</legend>
+        
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" [(ngModel)]="nomeEscolhido" #inputProp>
+            <br><br>
+            <label for="valor">Valor: </label>
+            <input type="number" [(ngModel)]="valorEscolhido" #inputValue>
+            <br><br>
+            <button (click)="addMed(inputProp.value, inputValue.value)">Cadastrar</button>
+            <br><br>
+            {{qt}} Itens adicionados
+        </fieldset>
+    </div>
+</div>
+
+

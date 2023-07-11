@@ -16,11 +16,12 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgPipesComponent } from './ng-pipes/ng-pipes.component';
 import { MicroondasComponent } from './microondas/microondas.component';
-import { PaiFilhoComponent } from './pai-filho/pai-filho.component';
-import { FilhoPaiComponent } from './filho-pai/filho-pai.component';
-import { ServicesComponent } from './services/services.component';
 import { InvertePipe } from './inverte.pipe';
 import { SqrtPipe } from './sqrt.pipe';
+import { MdPaiFilhoModule } from './md-pai-filho/md-pai-filho.module';
+import { MdFilhoPaiModule } from './md-filho-pai/md-filho-pai.module';
+import { MdServiceModule } from './md-service/md-service.module';
+import { AtvModulosModule } from './atv-modulos/atv-modulos.module';
 
 @NgModule({
   declarations: [
@@ -37,16 +38,17 @@ import { SqrtPipe } from './sqrt.pipe';
     NgSwitchComponent,
     NgPipesComponent,
     MicroondasComponent,
-    PaiFilhoComponent,
-    FilhoPaiComponent,
-    ServicesComponent,
     InvertePipe,
     SqrtPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MdPaiFilhoModule,
+    MdFilhoPaiModule,
+    MdServiceModule,
+    AtvModulosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

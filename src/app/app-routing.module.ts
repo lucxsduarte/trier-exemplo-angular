@@ -11,9 +11,10 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgPipesComponent } from './ng-pipes/ng-pipes.component';
 import { MicroondasComponent } from './microondas/microondas.component';
-import { PaiFilhoComponent } from './pai-filho/pai-filho.component';
-import { FilhoPaiComponent } from './filho-pai/filho-pai.component';
-import { ServicesComponent } from './services/services.component';
+import { CpPaiComponent } from './md-pai-filho/cp-pai/cp-pai.component';
+import { CpPaiComponent as CpPaiComponent2} from './md-filho-pai/cp-pai/cp-pai.component';
+import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
+import { CpTelaComponent } from './atv-modulos/cp-tela/cp-tela.component';
 
 const routes: Routes = [
   { path: 'menu', component: MenuComponent},
@@ -27,9 +28,10 @@ const routes: Routes = [
   { path: 'ng-switch', component: NgSwitchComponent},
   { path: 'pipes', component: NgPipesComponent},
   { path: 'microondas', component: MicroondasComponent},
-  { path: 'pai-filho', component: PaiFilhoComponent},
-  { path: 'filho-pai', component: FilhoPaiComponent},
-  { path: 'services', component: ServicesComponent},
+  { path: 'pai-filho', component: CpPaiComponent},
+  { path: 'filho-pai', component: CpPaiComponent2},
+  { path: 'services', component: CpAgrupadorComponent},
+  { path: 'atv-modulos', component: CpTelaComponent},
 ];
 
 @NgModule({

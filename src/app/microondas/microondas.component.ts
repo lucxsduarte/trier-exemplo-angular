@@ -82,9 +82,6 @@ export class MicroondasComponent {
     }
 
   }
-  formatTime(time: number): string {
-    return time < 10 ? "0" + time : String(time);
-  }
 
   public acrescentarTempo(tempo: number) {
     this.acrescentaTempo = true;
