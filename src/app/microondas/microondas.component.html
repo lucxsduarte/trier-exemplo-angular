@@ -6,7 +6,7 @@
         <br>
         <div>
             <div>
-                <button class="botaoMetade" (click)="acrescentarTempo(60)">+1min</button>
+                <button class="botaoMetade" (click)="acrescentarTempo(100)">+1min</button>
                 <button class="botaoMetade" (click)="acrescentarTempo(30)">+30seg</button>
             </div>
             <br>
@@ -25,7 +25,7 @@
                 <br>
                 <button (click)="paraContador()">Cancelar</button>
                 <button (click)="adicionaTempo(0)">0</button>
-                <button (click)="iniciaContador()" [disabled]="contadorAtivo" >Ligar</button>
+                <button (click)="iniciaContador()" [disabled]="contadorAtivo">Ligar</button>
             </div>
         </div>
     </fieldset>
