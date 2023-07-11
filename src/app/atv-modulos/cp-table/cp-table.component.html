@@ -7,10 +7,14 @@
                 <tr>
                     <td class="centraliza"><b>Nome</b></td>
                     <td class="centraliza"><b>Valor</b></td>
+                    <td></td>
                 </tr>
                 <tr *ngFor="let med of medicamentos">
                     <td>{{med.nome}}</td>
                     <td>{{med.valor}}</td>
+                    <td class="centraliza">
+                        <button (click)="clickMedicamento(med)" >Buscar</button>
+                    </td>
                 </tr>
             </table>
         </fieldset>

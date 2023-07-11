@@ -8,6 +8,8 @@ export class ServiceService {
   public nomeSelecionado: string = "";
   public valorSelecionadio: number = 0;
   public emitEvent = new EventEmitter();
+  public emitNome = new EventEmitter();
+  public emitValor = new EventEmitter();
 
   private medicamentos: any = [
     {nome: "Rivotril", valor: 10}
@@ -26,6 +28,8 @@ export class ServiceService {
   public clickMedicamento(med: any){
     this.nomeSelecionado = med.nome;
     this.valorSelecionadio = med.valor;
+    this.emitNome.emit(this.nomeSelecionado);
+    this.emitValor.emit(this.valorSelecionadio);
   }
 
   constructor() { }

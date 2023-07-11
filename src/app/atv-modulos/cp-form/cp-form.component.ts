@@ -24,6 +24,17 @@ export class CpFormComponent implements OnInit{
       next: (res: number) => this.qt = res,
       error: (err: number) => this.qt = 0,
     });
+
+    this.service.emitNome.subscribe((nome: string) => {
+      // Faça o que precisa com o novo alerta
+      this.nomeEscolhido = nome;
+    });
+
+    this.service.emitValor.subscribe((valor: number) => {
+      // Faça o que precisa com o novo alerta
+      this.valorEscolhido = valor;
+    });
   }
-  
 }
+  
+
