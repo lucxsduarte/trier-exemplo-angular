@@ -11,7 +11,6 @@ export class CpFormComponent implements OnInit{
   public nomeEscolhido: string = "";
   public valorEscolhido: number = 0;
   public qt: number = 0;
-  public medicamentos: any = [];
 
   constructor(private service: ServiceService){}
   
